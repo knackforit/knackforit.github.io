@@ -2,20 +2,13 @@
 
 body {
 	background-color: #1E1F24;
-
-	/* Starting Animation State */
-	/*filter: blur(10px);*/
 }
 
-.blur {
-	-webkit-filter: blur(10px);
-	-o-filter: blur(10px);
-	-ms-filter: blur(10px);
-	-moz-filter: blur(10px);
-	filter: blur(10px); 
+a { 
+	text-decoration: none;
 }
 
-section {
+#hero-section {
     position: absolute;
     top: 45%;
     left: 50%;
@@ -24,6 +17,15 @@ section {
     width: 363px;
     height: 200px;
     display: block;
+	float: left;
+}
+
+.blur {
+	-webkit-filter: blur(10px);
+	-o-filter: blur(10px);
+	-ms-filter: blur(10px);
+	-moz-filter: blur(10px);
+	filter: blur(10px); 
 }
 
 .blur-animation {
@@ -67,29 +69,14 @@ section {
 	}
 }
 
-#left-pane {
-	/*background-color: #666;*/
-	display: block;
-	width: 363px;
-	float: left;
-}
-
-.left-pane_row {
-	text-align: center;
-	width: 100%;
-	display: block;
-	float: left;
-}
-
-
-#left-pane_name {
+#hero-section_name {
 	text-align: left;
     height: 160px;
     position: relative;
 	transform: translate(6%, 0);
 }
 
-#left-pane_name name-title {
+#hero-section_name name-title {
 	font-family: LatoWebHairline;
 	font-size: 3em;
 	letter-spacing: 6.48px;
@@ -101,21 +88,21 @@ section {
 	line-height: 1.2em;
 }
 
-#left-pane_name last-name-title {
+#hero-section last-name-title {
 	font-size: 1.8em;
 	font-family: LatoWeb;
 	letter-spacing: 22px; 
 	color: rgba(250, 250, 250, 1);
 }
 
-#left-pane_subtitle {
+#hero-section_subtitle {
     height: 270px;
     position: relative;
 	text-align: left;
 	width: 100%;
 }
 
-#left-pane_subtitle name-subtitle {
+#hero-section_subtitle name-subtitle {
 	font-family: LatoWebHairline;
 	font-size: 1.325em;
 	letter-spacing: 2px;
@@ -132,7 +119,7 @@ bullet {
 	color: rgba(217, 217, 217, 0.6);
 }
 
-#left-pane_links {
+#footer {
 	height: 28px;
 	text-align: center;
 	bottom: 80px;
@@ -142,29 +129,25 @@ bullet {
     transform: translate(-50%, 0);
 }
 
-.left-pane_links_svg {
+.footer_links_svg {
 	padding: 0 7px;
 	transition: 0.2s;
 	-webkit-transition: 0.2s;
 	fill: rgba(250, 250, 250, 1);
 }
 
-svg:hover .left-pane_links_svg_github {
+svg:hover .footer_links_svg_github {
 	fill: #60B044;
 }
 
-svg:hover .left-pane_links_svg_twitter {
+svg:hover .footer_links_svg_twitter {
 	fill: #00ACED;
 }
 
-svg:hover .left-pane_links_svg_tumblr {
+svg:hover .footer_links_svg_tumblr {
 	fill: rgb(54, 70, 93);
 }
 
-svg:hover .left-pane_links_svg_linkedin {
+svg:hover .footer_links_svg_linkedin {
 	fill: #0077B5;
-}
-
-a { 
-	text-decoration: none;
 }
