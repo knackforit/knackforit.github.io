@@ -1,5 +1,9 @@
 /* Style */
 
+html {
+  height: 100%;
+}
+
 body {
 	background-color: #1E1F24;
 }
@@ -21,18 +25,18 @@ a {
 }
 
 .blur {
-	-webkit-filter: blur(10px);
+	filter: blur(10px);
 	-o-filter: blur(10px);
 	-ms-filter: blur(10px);
 	-moz-filter: blur(10px);
-	filter: blur(10px); 
+	-webkit-filter: blur(10px);
 }
 
 .blur-animation {
-	animation: blur 1.2s ease-in-out;
-	-webkit-animation: blur 1.2s ease-in-out;
-	-o-animation: blur 1.2s ease-in-out;
-	-moz-animation: blur 1.2s ease-in-out;
+	animation: blur 1.2s ease-in-out forwards;
+	-o-animation: blur 1.2s ease-in-out forwards;
+	-moz-animation: blur 1.2s ease-in-out forwards;
+	-webkit-animation: blur 1.2s ease-in-out forwards;
 }
 
 @-webkit-keyframes blur {
