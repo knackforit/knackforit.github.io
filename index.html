@@ -5,9 +5,18 @@
   <title>Kyle Zaragoza</title>
   <link rel="stylesheet" type="text/css" href="css/latofonts.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript">
+    window.onload = function () { 
+      // remove blur once page has loaded
+      document.getElementsByTagName("body")[0].classList.add('blur-animation');
+      setTimeout(function() { 
+        document.getElementsByTagName("body")[0].classList.remove('blur');
+      }, 1200);
+    }
+  </script>
 </head>
 
-<body>
+<body class="blur">
   <div id="portrait-container"></div>
   <section>
     <div id="left-pane">

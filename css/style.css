@@ -3,11 +3,16 @@
 body {
 	background-color: #1E1F24;
 
-	/* Starting Animation */
-	animation: blur 1.2s ease-in-out;
-	-webkit-animation: blur 1.2s ease-in-out;
-	-o-animation: blur 1.2s ease-in-out;
-	-moz-animation: blur 1.2s ease-in-out;
+	/* Starting Animation State */
+	/*filter: blur(10px);*/
+}
+
+.blur {
+	-webkit-filter: blur(10px);
+	-o-filter: blur(10px);
+	-ms-filter: blur(10px);
+	-moz-filter: blur(10px);
+	filter: blur(10px); 
 }
 
 section {
@@ -19,6 +24,13 @@ section {
     width: 363px;
     height: 200px;
     display: block;
+}
+
+.blur-animation {
+	animation: blur 1.2s ease-in-out;
+	-webkit-animation: blur 1.2s ease-in-out;
+	-o-animation: blur 1.2s ease-in-out;
+	-moz-animation: blur 1.2s ease-in-out;
 }
 
 @-webkit-keyframes blur {
