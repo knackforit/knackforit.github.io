@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="25px" height="35px" viewBox="0 0 25 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>t</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M19.1601562,5 L19.1601562,11.6992188 L25.4492188,11.6992188 L25.4492188,15.859375 L19.1601562,15.859375 L19.1601562,22.65625 C19.1601562,24.192716 19.2415356,25.1790343 19.4042969,25.6152344 C19.5670581,26.0514345 19.8697895,26.3997383 20.3125,26.6601562 C20.8984404,27.0117205 21.5690066,27.1875 22.3242188,27.1875 C23.6653713,27.1875 24.9999934,26.7513064 26.328125,25.8789062 L26.328125,30.0585938 C25.1953068,30.5924506 24.1699265,30.9667958 23.2519531,31.1816406 C22.3339798,31.3964854 21.3411512,31.5039062 20.2734375,31.5039062 C19.0624939,31.5039062 17.9915411,31.350913 17.0605469,31.0449219 C16.1295526,30.7389308 15.3352897,30.3027372 14.6777344,29.7363281 C14.020179,29.169919 13.5644544,28.5677115 13.3105469,27.9296875 C13.0566394,27.2916635 12.9296875,26.3671936 12.9296875,25.15625 L12.9296875,15.859375 L10,15.859375 L10,12.109375 C11.0416719,11.7708316 11.93359,11.2858104 12.6757812,10.6542969 C13.4179725,10.0227833 14.0136696,9.26432734 14.4628906,8.37890625 C14.9121116,7.49348516 15.2213533,6.36719434 15.390625,5 L19.1601562,5 Z" id="path-1"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-6.000000, -3.000000)">
+            <g id="t">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#D9D9D9" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

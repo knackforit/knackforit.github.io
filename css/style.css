@@ -1,0 +1,141 @@
+/* Style */
+
+body {
+	background-color: #1E1F24;
+}
+
+#portrait-container {
+	position: absolute;
+	top: 0;
+	left: 35%;
+	right: 0;
+	bottom: 0;
+	/*background-image: url("../images/portrait.png");*/
+	background-position: center;
+}
+
+section {
+	animation: blur 1.2s ease-in-out;
+	-webkit-animation: blur 1.2s ease-in-out;
+	-o-animation: blur 1.2s ease-in-out;
+	-moz-animation: blur 1.2s ease-in-out;
+
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    /*transform: translate(-65%, -50%);*/
+	transform: translate(-50%, -50%);
+    width: 800px;
+    height: 400px;
+    display: block;
+}
+
+@-webkit-keyframes blur {
+  0%{ 
+	-webkit-filter: blur(10px);
+	-o-filter: blur(10px);
+	-ms-filter: blur(10px);
+	-moz-filter: blur(10px);
+	filter: blur(10px); 
+	}
+  100% { 
+	-webkit-filter: blur(0px);
+	-o-filter: blur(0px);
+	-ms-filter: blur(0px);
+	-moz-filter: blur(0px);
+	filter: blur(0px); 
+	}
+}
+
+#left-pane {
+	/*background-color: #666;*/
+	display: block;
+	width: 800px;
+	float: left;
+}
+
+.left-pane_row {
+	text-align: center;
+	width: 100%;
+	display: block;
+	float: left;
+}
+
+
+#left-pane_name {
+    height: 120px;
+    position: relative;
+}
+
+#left-pane_name name-title {
+	font-family: LatoWebHairline;
+	font-size: 3.75em; /* 60px/16=3.75em */
+	letter-spacing: 6.48px;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-right: -50%;
+    transform: translate(-50%, 0);
+	color: rgba(250, 250, 250, 1);
+}
+
+#left-pane_subtitle {
+    height: 200px;
+    position: relative;
+}
+
+#left-pane_subtitle name-subtitle {
+	font-family: LatoWebHairline;
+	font-size: 1.125em; /* 18px/16=1.125em */
+	letter-spacing: 2px;
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0);
+	color: rgba(250, 250, 250, 1);
+}
+
+bullet {
+	color: rgba(217, 217, 217, 0.6);
+}
+
+#left-pane_links {
+	height: 80px;
+}
+
+.left-pane_links_svg {
+	padding: 0 7px;
+	transition: 0.2s;
+	-webkit-transition: 0.2s;
+	fill: rgba(217, 217, 217, 0.6);
+}
+
+svg:hover .left-pane_links_svg {
+	/*transform-origin: 14px 14px;*/
+	/*transform: scale(1.2);*/
+}
+
+svg:hover .left-pane_links_svg_github {
+	fill: #60B044;
+}
+
+svg:hover .left-pane_links_svg_twitter {
+	fill: #00ACED;
+}
+
+svg:hover .left-pane_links_svg_tumblr {
+	fill: rgb(54, 70, 93);
+}
+
+svg:hover .left-pane_links_svg_linkedin {
+	fill: #0077B5;
+}
+
+a { 
+	text-decoration: none;
+}
