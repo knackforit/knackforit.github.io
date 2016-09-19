@@ -81,7 +81,7 @@ a {
 }
 
 #hero-section_name name-title {
-	font-family: LatoWebHairline;
+	font-family: LatoWebThin;
 	font-size: 3em;
 	letter-spacing: 6.48px;
     position: absolute;
@@ -107,7 +107,7 @@ a {
 }
 
 #hero-section_subtitle name-subtitle {
-	font-family: LatoWebHairline;
+	font-family: LatoWebThin;
 	font-size: 1.325em;
 	letter-spacing: 2px;
     margin: 0;
