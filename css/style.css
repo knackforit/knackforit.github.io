@@ -164,43 +164,36 @@ svg:hover .footer_links_svg_linkedin {
 @media only screen 
   and (max-device-width: 736px) {
 	#hero-section {
-		width: 260px;
-		height: 160px;
-		top: 50%;
+		width: 234px;
+		top: 48%;
 	}
 	#hero-section_name {
 		text-align: left;
-		height: 80px;
+		height: 160px;
 		position: relative;
 		transform: translate(0, 0);
 	}
 	#hero-section_name name-title {
 		font-family: LatoWebThin;
-		font-size: 1.75em;
+		font-size: 2.6em;
 		letter-spacing: 2.13px;
 		left: 50%;
 		margin-right: -50%;
 		transform: translate(-50%, 0);
 		line-height: 1.2em;
 	}
-	#hero-section_name last-name-title {
-		font-size: 1.4em;
-		font-family: LatoWebSemibold;
-		letter-spacing: 7px; 
+	#hero-section_subtitle {
+		height: 0;
 	}
 	#hero-section_subtitle name-subtitle {
+		display: none;
 		font-family: LatoWebThin;
 		font-size: 1em;
 		letter-spacing: 2px;
 	}
-	#footer {
+	#hero-section_footer {
 		height: 28px;
 		text-align: center;
-		bottom: 40px;
-		position: absolute;
-		left: 50%;
-		margin-right: -50%;
-		transform: translate(-50%, 0);
 	}
 }
 
