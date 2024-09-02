@@ -1,212 +1,62 @@
-/* Style */
-
-html {
-  height: 100%;
-}
-
 body {
-	background-color: #1E1F24;
+  font-family: 'LatoWeb', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #edf3f8; /*#f6f8fa;*/
+  color: #24292e;
 }
 
-a { 
-	text-decoration: none;
-}
-
-#hero-section {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-	transform: translate(-50%, -50%);
-    width: 600px;
-    height: 200px;
-    display: block;
-	float: left;
-}
-
-#hero-section_name {
-	text-align: left;
-    height: 60px;
-    position: relative;
-}
-
-#hero-section_name name-title {
-	font-family: LatoWebThin;
-	font-size: 3.1em;
-	letter-spacing: 6px;
-    position: absolute;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, 0);
-	color: rgba(221, 221, 221, 1);
-	line-height: 1.3em;
-}
-
-#hero-section_subtitle {
-    height: 100px;
-    position: relative;
-	text-align: left;
-	width: 100%;
-}
-
-#hero-section_subtitle name-subtitle {
-	font-family: LatoWebThin;
-	font-size: 0.9em;
-	letter-spacing: 2px;
-    margin: 0;
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, 0);
-	color: rgba(180, 180, 180, 1);
-}
-
-#hero-section_footer {
-	height: 28px;
-	text-align: center;
-}
-
-bullet {
-	color: rgba(217, 217, 217, 0.6);
-}
-
-#footer {
-	/*display: none;*/
-	height: 28px;
-	text-align: center;
-	bottom: 340px;
+canvas {
 	position: absolute;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, 0);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+	z-index: -1;
 }
 
-.footer_links_svg {
-	width: 24px;
-	height: 24px;
-	padding: 0 7px;
-	transition: 0.2s;
-	-webkit-transition: 0.2s;
-	fill: rgba(180, 180, 180, 1);
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+	z-index: 1;
 }
 
-svg:hover .footer_links_svg_github {
-	fill: #60B044;
+h1 {
+	/* font-family: 'LatoWebThin'; */
+  font-size: 3.1em;
+	letter-spacing: 4px;
+  margin-bottom: 10px;
 }
 
-svg:hover .footer_links_svg_twitter {
-	fill: #00ACED;
+h2 {
+  font-size: 24px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: 10px;
 }
 
-svg:hover .footer_links_svg_tumblr {
-	fill: rgb(54, 70, 93);
+p {
+  font-size: 16px;
+  color: #586069;
 }
 
-svg:hover .footer_links_svg_linkedin {
-	fill: #0077B5;
+ul {
+  list-style-type: none;
+  padding-left: 0;
 }
 
-/* Animation */
-
-.blur {
-	filter: blur(10px);
-	-o-filter: blur(10px);
-	-ms-filter: blur(10px);
-	-moz-filter: blur(10px);
-	-webkit-filter: blur(10px);
+li {
+  margin-bottom: 10px;
 }
 
-.blur-animation {
-	animation: blur 1.2s ease-in-out forwards;
-	-o-animation: blur 1.2s ease-in-out forwards;
-	-moz-animation: blur 1.2s ease-in-out forwards;
-	-webkit-animation: blur 1.2s ease-in-out forwards;
+a {
+  color: #0366d6;
+  text-decoration: none;
 }
 
-@-webkit-keyframes blur {
-	0%{ 
-	-webkit-filter: blur(10px);
-	-o-filter: blur(10px);
-	-ms-filter: blur(10px);
-	-moz-filter: blur(10px);
-	filter: blur(10px); 
-	}
-  100% { 
-	-webkit-filter: blur(0px);
-	-o-filter: blur(0px);
-	-ms-filter: blur(0px);
-	-moz-filter: blur(0px);
-	filter: blur(0px); 
-	}
-}
-
-@keyframes blur {
-  0%{ 
-	-webkit-filter: blur(10px);
-	-o-filter: blur(10px);
-	-ms-filter: blur(10px);
-	-moz-filter: blur(10px);
-	filter: blur(10px); 
-	}
-  100% { 
-	-webkit-filter: blur(0px);
-	-o-filter: blur(0px);
-	-ms-filter: blur(0px);
-	-moz-filter: blur(0px);
-	filter: blur(0px); 
-	}
-}
-
-/* Mobile */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (max-device-width: 736px) {
-	#hero-section {
-		width: 234px;
-		top: 48%;
-	}
-	#hero-section_name {
-		text-align: left;
-		height: 160px;
-		position: relative;
-		transform: translate(0, 0);
-	}
-	#hero-section_name name-title {
-		font-family: LatoWebThin;
-		font-size: 2.6em;
-		letter-spacing: 2.13px;
-		left: 50%;
-		margin-right: -50%;
-		transform: translate(-50%, 0);
-		line-height: 1.2em;
-	}
-	#hero-section_subtitle {
-		height: 0;
-	}
-	#hero-section_subtitle name-subtitle {
-		display: none;
-		font-family: LatoWebThin;
-		font-size: 1em;
-		letter-spacing: 2px;
-	}
-	#hero-section_footer {
-		height: 28px;
-		text-align: center;
-	}
-}
-
-/* Portrait */
-@media only screen 
-  and (max-device-width: 736px)
-  and (orientation: portrait) {
-
-}
-
-/* Landscape */
-@media only screen
-  and (max-device-width: 736px)
-  and (orientation: landscape) {
-
+a:hover {
+  text-decoration: underline;
 }
